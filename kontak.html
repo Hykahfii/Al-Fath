@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Toko Sepatu Al Kahfi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding-top: 30px;
+        }
+        h1 {
+            text-align: center;
+            color: #ffffff;
+        }
+        .contact-info, .contact-form {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .contact-info h2, .contact-form h2 {
+            color: #333;
+        }
+        .contact-info p, .contact-form p {
+            font-size: 16px;
+            color: #777;
+        }
+        .contact-info ul {
+            list-style: none;
+            padding: 0;
+        }
+        .contact-info li {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        .contact-info li i {
+            color: #333;
+            margin-right: 10px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .contact-form button {
+            display: inline-block;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #e67e22;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Toko Sepatu Kapii</h1>
+            <p>Kami menyediakan berbagai model sepatu terkini untuk Anda</p>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="produk.html">Product</a>
+                <a href="about.html">About Us</a>
+                <a href="kontak.html">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="product">
+            <div class="contact-info">
+                <h2>Informasi Kontak</h2>
+                <p>Anda dapat menghubungi saya jika ingin bertanya tanya tentang sepatu melalui informasi di bawah ini:</p>
+                <ul>
+                    <li><i class="fas fa-phone"></i> Telepon: 0812319771837</li>
+                    <li><i class="fas fa-envelope"></i> Email: alkapiishoess@gmail.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Alamat: Jl. Pancakarya no 778</li>
+                </ul>
+            </div>
+    
+            <div class="contact-form">
+                <h2>Formulir Kontak</h2>
+                <p>Silakan isi formulir di bawah ini untuk mengirim pesan kepada kami:</p>
+                <form action="#">
+                    <input type="text" placeholder="Nama Lengkap" required>
+                    <input type="email" placeholder="Email" required>
+                    <form id="feedbackForm">
+                        <textarea id="feedbackMessage" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
+                        <button type="button" onclick="submitFeedback()">Submit</button>
+                    </form>
+                </form>
+                        <!-- Pesan konfirmasi -->
+        <div id="thankYouMessage" class="thank-you-message">
+            <p>Terima kasih atas saran Anda!</p>
+        </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Toko Sepatu Kapii</p>
+    </footer>
+
+</body>
+</html>
